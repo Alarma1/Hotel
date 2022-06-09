@@ -406,8 +406,8 @@ body {
 
 .tour-description {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center center;
     padding: 28px;
     margin-top: 19px;
     width: 1080px;
@@ -416,7 +416,6 @@ body {
 }
 
 .tour-description-item {
-    align-items: center;
     width: 142px;
     height: 50px;
 }
@@ -430,4 +429,47 @@ body {
     font-size: 16px;
     font-family: 'Muller-regular';
     font-weight: 400;
+}
+
+/* Contacts */
+.container-contacts {
+    height: 618px;
+    padding: 44px 46px 44px 46px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.contacts-ul {
+    width: 375px;
+    height: 528px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contacts-li {
+    width: 375px;
+    min-height: 72px;
+}
+
+.contacts-li-heading {
+    font-family: 'Muller';
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contacts-btn {
+    padding: 27px 29px 27px 29px;
+}
+
+.cotnacts-img {
+    width: 653px;
+    height: 528px;
+    border-radius: 10px;
+    margin-left: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../img/Layer\ 2\ 1.png);
 }
