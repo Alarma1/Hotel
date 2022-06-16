@@ -107,7 +107,7 @@ body {
 }
 
 .header-number {
-    font-family: 'Muller-medium';
+    font-family: 'Muller-medium', sans-serif;
     color: #666666;
     font-size: 20px;
     padding-left: 34px;
@@ -406,8 +406,8 @@ body {
 
 .tour-description {
     display: flex;
-    justify-content: space-between;
-    align-items: center center;
+    /* justify-content: space-between; */
+    align-items: center;
     padding: 28px;
     margin-top: 19px;
     width: 1080px;
@@ -427,12 +427,13 @@ body {
     padding-right: 30px;
     line-height: 16px;
     font-size: 16px;
-    font-family: 'Muller-regular';
+    font-family: 'Muller-regular', sans-serif;
     font-weight: 400;
 }
 
 /* Contacts */
 .container-contacts {
+    margin-top: 26px;
     height: 618px;
     padding: 44px 46px 44px 46px;
     background-color: #FFFFFF;
@@ -447,29 +448,49 @@ body {
     flex-wrap: wrap;
 }
 
-.contacts-li {
-    width: 375px;
-    min-height: 72px;
+.contacts-li-item {
+    display: flex;
+}
+
+.contacts-li-item-heading {
+    width: 145px;
+}
+
+.contacts-li:not(:first-child) {
+    padding-top: 25px;
 }
 
 .contacts-li-heading {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-weight: 700;
     color: #000000;
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
 }
 
+.contacts-li-description {
+    width: 229px;
+    font-family: 'Muller-regular', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contacts-li-description-email {
+    color: #999999;
+}
 .contacts-btn {
+    margin-top: 44px;
+    font-family: 'Muller',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
     padding: 27px 29px 27px 29px;
 }
 
-.cotnacts-img {
-    width: 653px;
-    height: 528px;
-    border-radius: 10px;
+.contacts-li-image {
     margin-left: 50px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url(../img/Layer\ 2\ 1.png);
+
 }
