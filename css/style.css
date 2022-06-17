@@ -494,3 +494,68 @@ body {
     margin-left: 50px;
 
 }
+
+/* Footer */
+.footer-container {
+    display: flex;
+    position: relative;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    padding: 44px 51px 46px 52px;
+    border-radius: 15px;
+    min-height: 341px;
+    background-color: #333333;
+}
+
+.footer-ul {
+    font-family: 'Muller-regular',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-ul-li-terms {
+    margin-top: 49px;
+    line-height: 24px;
+}
+
+.footer-ul-info {
+    width: 320px;
+    color: #FFFFFF;
+    line-height: 30.4px;
+}
+
+.footer-ul-li-text {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.footer-ul-contacts {
+    width: 358px;
+    margin-top: 6px;
+    margin-left: 102px;
+    line-height: 24px;
+}
+
+.footer-ul-li-address {
+    line-height: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.footer-ul-li-tell {
+    margin-bottom: 15px;
+}
+
+.footer-logo {
+    display: inline-block;
+    position: absolute;
+    top: 127px;
+    left: 723px;
+}
+
+.footer-ul-icon {
+    margin-left: auto;
+    margin-top: 6px;
+    line-height: 40px;
+}
