@@ -406,7 +406,6 @@ body {
 
 .tour-description {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     padding: 28px;
     margin-top: 19px;
@@ -416,8 +415,34 @@ body {
 }
 
 .tour-description-item {
-    width: 142px;
-    height: 50px;
+    width: 169px;
+}
+
+.tour-description-item:not(:first-child) {
+    margin-left: 41px;
+}
+
+.tour-description-item-header {
+    margin: 0;
+    font-family: 'Muller-regular', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.tour-description-item-description-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.tour-description-item-description {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-family: 'Muller-regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
 }
 
 .tour-btn {
@@ -433,6 +458,7 @@ body {
 
 /* Contacts */
 .container-contacts {
+    min-height: 618px;
     margin-top: 26px;
     height: 618px;
     padding: 44px 46px 44px 46px;
@@ -442,7 +468,7 @@ body {
 
 .contacts-ul {
     width: 375px;
-    height: 528px;
+    height: 564px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -454,10 +480,6 @@ body {
 
 .contacts-li-item-heading {
     width: 145px;
-}
-
-.contacts-li:not(:first-child) {
-    padding-top: 25px;
 }
 
 .contacts-li-heading {
@@ -481,13 +503,19 @@ body {
 .contacts-li-description-email {
     color: #999999;
 }
+
+.contacts-li-stick {
+    margin-top: 22px;
+    margin-bottom: 25px;
+}
+
 .contacts-btn {
-    margin-top: 44px;
-    font-family: 'Muller',sans-serif;
+    margin-top: 20px;
+    font-family: 'Muller-regular', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
-    padding: 27px 29px 27px 29px;
+    padding: 26px 27px 26px 27px;
 }
 
 .contacts-li-image {
@@ -508,7 +536,7 @@ body {
 }
 
 .footer-ul {
-    font-family: 'Muller-regular',sans-serif;
+    font-family: 'Muller-regular', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -557,5 +585,8 @@ body {
 .footer-ul-icon {
     margin-left: auto;
     margin-top: 6px;
-    line-height: 40px;
+}
+
+.footer-ul-icon-social:not(:first-child) {
+    margin-top: 20px;
 }
