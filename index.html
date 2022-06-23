@@ -21,7 +21,10 @@
           <path d="M10.59 1.41L14.17 5H0V7H14.17L10.58 10.59L12 12L18 6L12 0L10.59 1.41ZM19 0V12H21V0H19Z"
             fill="#CC9933" />
         </svg>
-        Личный кабинет</a>
+        <span class="header-text">
+          Личный кабинет
+        </span>
+      </a>
     </div>
     <div class="container container-nav">
       <nav>
@@ -103,6 +106,7 @@
         </ul>
       </div>
     </section>
+
     <section>
       <div class="container container-us">
         <h2 class="section-us-about">О нас</h2>
@@ -114,6 +118,7 @@
           структура организации требуют определения и уточнения существенных финансовых и административных условий.</p>
       </div>
     </section>
+
     <section>
       <div class="container services-container">
         <h2>Услуги</h2>
@@ -165,6 +170,7 @@
         </ul>
       </div>
     </section>
+
     <section>
       <div class="container container-advantage">
         <h2>Приемущества</h2>
@@ -535,6 +541,7 @@
         </ul>
       </div>
     </section>
+
     <section>
       <div class="container container-placement">
         <h2>Размещение</h2>
@@ -750,130 +757,133 @@
         </ul>
       </div>
     </section>
+
     <section>
       <div class="container tour-container">
         <h2>Хочу тур</h2>
-        <ul class="tour-description">
-          <li class="tour-description-item">
-            <p class="tour-description-item-header">Город вылета</p>
-            <div class="tour-description-item-description-contain">
-              <p class="tour-description-item-description">Санкт-петербург</p>
-              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 6L10 0H0L5 6Z" fill="black" />
-              </svg>
-            </div>
-          </li>
-          <li class="tour-description-item">
-            <p class="tour-description-item-header">Страна</p>
-            <div class="tour-description-item-description-contain">
-              <p class="tour-description-item-description">Австралия</p>
-              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 6L10 0H0L5 6Z" fill="black" />
-              </svg>
-            </div>
-          </li>
-          <li class="tour-description-item">
-            <p class="tour-description-item-header">Дата прибытия</p>
-            <div class="tour-description-item-description-contain">
-              <p class="tour-description-item-description">18.10.2021</p>
-              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13.6666 2.00008H11.6666V0.666748H10.3333V2.00008H3.66665V0.666748H2.33331V2.00008H0.333313V15.3334H13.6666V2.00008ZM12.3333 14.0001H1.66665V5.33341H12.3333V14.0001Z"
-                  fill="black" />
-              </svg>
-            </div>
-          </li>
-          <li class="tour-description-item">
-            <p class="tour-description-item-header">Ночей</p>
-            <input type="number" step="1" min="1" max="100" value="6">
-          </li>
-          <li class="tour-description-item">
-            <p class="tour-description-item-header">Туристы</p>
-            <input type="number" step="1" min="1" max="100" value="2">
-          </li>
-          <li class="tour-description-item">
-            <button class="btn tour-btn">Найти</button>
-          </li>
-        </ul>
+        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+          <ul class="tour-description">
+            <li class="tour-description-item">
+              <p class="tour-description-item-header">Город вылета</p>
+              <div class="tour-description-item-description-contain">
+                <p class="tour-description-item-description">Санкт-петербург</p>
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 6L10 0H0L5 6Z" fill="black" />
+                </svg>
+              </div>
+            </li>
+            <li class="tour-description-item">
+              <p class="tour-description-item-header">Страна</p>
+              <div class="tour-description-item-description-contain">
+                <p class="tour-description-item-description">Австралия</p>
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 6L10 0H0L5 6Z" fill="black" />
+                </svg>
+              </div>
+            </li>
+            <li class="tour-description-item tour-description-item-size">
+              <p class="tour-description-item-header">Дата прибытия</p>
+              <div class="tour-description-item-description-contain">
+                <input type="date" name="arrival-date" value="2021-10-18" class="tour-description-item-description tour-description-item-description-date">
+              </div>
+            </li>
+            <li class="tour-description-item tour-description-item-size">
+              <p class="tour-description-item-header">Ночей</p>
+                <input type="number" name="night-count" step="1" min="1" max="100" value="6" class="tour-description-item-description tour-description-item-input">
+            </li>
+            <li class="tour-description-item tour-description-item-size">
+              <p class="tour-description-item-header">Туристы</p>
+                <input type="number" name="tourists-count" required step="1" min="1" max="100" value="2" class="tour-description-item-description tour-description-item-input">
+            </li>
+            <li class="tour-description-item-btn">
+              <button type="submit" class="btn tour-btn">Найти</button>
+            </li>
+          </ul>
+        </form>
       </div>
     </section>
+
     <section class="container">
       <h2>Контакты</h2>
       <div class="container container-contacts">
         <div class="">
-          <ul class="contacts-ul">
-            <li class="contacts-li">
-              <div class="contacts-li-item">
-                <div class="contacts-li-item-heading">
-                  <p class="contacts-li-heading">Адрес</p>
+          <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+            <ul class="contacts-ul">
+              <li class="contacts-li">
+                <div class="contacts-li-item">
+                  <div class="contacts-li-item-heading">
+                    <p class="contacts-li-heading">Адрес</p>
+                  </div>
+                  <div class="contacts-li-item-element">
+                    <input type="hidden" name="address" value="Москва, улица Юности, дом 5 строение 4, офис 2">
+                    <p class="contacts-li-description">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+                  </div>
                 </div>
-                <div class="contacts-li-item-element">
-                  <p class="contacts-li-description">Москва, улица Юности, дом 5 строение 4, офис 2</p>
+                <svg class="contacts-li-stick" width="375" height="1" viewBox="0 0 375 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="375" height="1" fill="#C4C4C4" />
+                </svg>
+              </li>
+              <li class="contacts-li">
+                <div class="contacts-li-item">
+                  <div class="contacts-li-item-heading">
+                    <p class="contacts-li-heading">Телефоны</p>
+                  </div>
+                  <div class="contacts-li-item-element">
+                    <a class="contacts-li-description" href="tel:+74995356444">+7(499)535-64-44</a>
+                    <br>
+                    <a class="contacts-li-description" href="tel:+74950050544">+7(495)005-05-44</a>
+                  </div>
                 </div>
-              </div>
-              <svg class="contacts-li-stick" width="375" height="1" viewBox="0 0 375 1" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect width="375" height="1" fill="#C4C4C4" />
-              </svg>
-            </li>
-            <li class="contacts-li">
-              <div class="contacts-li-item">
-                <div class="contacts-li-item-heading">
-                  <p class="contacts-li-heading">Телефоны</p>
+                <svg class="contacts-li-stick" width="375" height="1" viewBox="0 0 375 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="375" height="1" fill="#C4C4C4" />
+                </svg>
+              </li>
+              <li class="contacts-li">
+                <div class="contacts-li-item">
+                  <div class="contacts-li-item-heading">
+                    <p class="contacts-li-heading">E-mail</p>
+                  </div>
+                  <div class="contacts-li-item-element">
+                    <a class="contacts-li-description" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                    <p class="contacts-li-description contacts-li-description-email">по вопросам бронирования</p>
+                    <a class="contacts-li-description" href="mailto:hotels.lg@mail.ru">hotels.lg@mail.ru</a>
+                    <p class="contacts-li-description contacts-li-description-email">по вопросам сотрудничества</p>
+                  </div>
                 </div>
-                <div class="contacts-li-item-element">
-                  <a class="contacts-li-description" href="tel:+74995356444">+7(499)535-64-44</a>
-                  <br>
-                  <a class="contacts-li-description" href="tel:+74950050544">+7(495)005-05-44</a>
+                <svg class="contacts-li-stick" width="375" height="1" viewBox="0 0 375 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="375" height="1" fill="#C4C4C4" />
+                </svg>
+              </li>
+              <li class="contacts-li">
+                <div class="contacts-li-item">
+                  <div class="contacts-li-item-heading">
+                    <p class="contacts-li-heading">График</p>
+                  </div>
+                  <div class="contacts-li-item-element">
+                    <p class="contacts-li-description">Понедельник - пятница, с 10:00 до 19:00</p>
+                  </div>
                 </div>
-              </div>
-              <svg class="contacts-li-stick" width="375" height="1" viewBox="0 0 375 1" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect width="375" height="1" fill="#C4C4C4" />
-              </svg>
-            </li>
-            <li class="contacts-li">
-              <div class="contacts-li-item">
-                <div class="contacts-li-item-heading">
-                  <p class="contacts-li-heading">E-mail</p>
-                </div>
-                <div class="contacts-li-item-element">
-                  <a class="contacts-li-description" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-                  <p class="contacts-li-description contacts-li-description-email">по вопросам бронирования</p>
-                  <a class="contacts-li-description" href="mailto:hotels.lg@mail.ru">hotels.lg@mail.ru</a>
-                  <p class="contacts-li-description contacts-li-description-email">по вопросам сотрудничества</p>
-                </div>
-              </div>
-              <svg class="contacts-li-stick" width="375" height="1" viewBox="0 0 375 1" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect width="375" height="1" fill="#C4C4C4" />
-              </svg>
-            </li>
-            <li class="contacts-li">
-              <div class="contacts-li-item">
-                <div class="contacts-li-item-heading">
-                  <p class="contacts-li-heading">График</p>
-                </div>
-                <div class="contacts-li-item-element">
-                  <p class="contacts-li-description">Понедельник - пятница, с 10:00 до 19:00</p>
-                </div>
-              </div>
-              <svg class="contacts-li-stick" width="375" height="1" viewBox="0 0 375 1" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect width="375" height="1" fill="#C4C4C4" />
-              </svg>
-            </li>
-            <li class="">
-              <button class="btn contacts-btn">Построить марштур</button>
-            </li>
-            <li class="contacts-li-image">
-              <img src="/Hotel/img/Layer 2 1.png" alt="">
-            </li>
-          </ul>
+                <svg class="contacts-li-stick" width="375" height="1" viewBox="0 0 375 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <rect width="375" height="1" fill="#C4C4C4" />
+                </svg>
+              </li>
+              <li class="">
+                <button type="submit" class="btn contacts-btn">Построить марштур</button>
+              </li>
+              <li class="contacts-li-image">
+                <img src="/Hotel/img/Layer21.png" alt="">
+              </li>
+            </ul>
+          </form>
         </div>
       </div>
     </section>
   </main>
+  
   <footer>
     <div class="container footer-container">
       <ul class="footer-ul footer-ul-info">
