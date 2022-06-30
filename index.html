@@ -766,34 +766,41 @@
             <li class="tour-description-item">
               <p class="tour-description-item-header">Город вылета</p>
               <div class="tour-description-item-description-contain">
-                <p class="tour-description-item-description">Санкт-петербург</p>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 6L10 0H0L5 6Z" fill="black" />
-                </svg>
+                <select class="tour-description-item-description tour-description-item-description-select"
+                  name="Departure-city">
+                  <option value="Санкт-петербург">Санкт-петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Уфа">Уфа</option>
+                </select>
               </div>
             </li>
             <li class="tour-description-item">
               <p class="tour-description-item-header">Страна</p>
               <div class="tour-description-item-description-contain">
-                <p class="tour-description-item-description">Австралия</p>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 6L10 0H0L5 6Z" fill="black" />
-                </svg>
+                <select class="tour-description-item-description tour-description-item-description-select"
+                  name="Country">
+                  <option value="Австралия">Австралия</option>
+                  <option value="Турция">Турция</option>
+                  <option value="Россия">Россия</option>
+                </select>
               </div>
             </li>
             <li class="tour-description-item tour-description-item-size">
               <p class="tour-description-item-header">Дата прибытия</p>
               <div class="tour-description-item-description-contain">
-                <input type="date" name="arrival-date" value="2021-10-18" class="tour-description-item-description tour-description-item-description-date">
+                <input type="date" name="arrival-date" value="2021-10-18"
+                  class="tour-description-item-description tour-description-item-description-date">
               </div>
             </li>
             <li class="tour-description-item tour-description-item-size">
               <p class="tour-description-item-header">Ночей</p>
-                <input type="number" name="night-count" step="1" min="1" max="100" value="6" class="tour-description-item-description tour-description-item-input">
+              <input type="number" name="night-count" step="1" min="1" max="100" value="6"
+                class="tour-description-item-description tour-description-item-input">
             </li>
             <li class="tour-description-item tour-description-item-size">
               <p class="tour-description-item-header">Туристы</p>
-                <input type="number" name="tourists-count" required step="1" min="1" max="100" value="2" class="tour-description-item-description tour-description-item-input">
+              <input type="number" name="tourists-count" required step="1" min="1" max="100" value="2"
+                class="tour-description-item-description tour-description-item-input">
             </li>
             <li class="tour-description-item-btn">
               <button type="submit" class="btn tour-btn">Найти</button>
@@ -883,7 +890,7 @@
       </div>
     </section>
   </main>
-  
+
   <footer>
     <div class="container footer-container">
       <ul class="footer-ul footer-ul-info">
