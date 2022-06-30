@@ -48,9 +48,22 @@ h2 {
     color: #333333;
 }
 
+a:hover {
+    cursor: pointer;
+    color: #A47312;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 1px solid #CC9933;
+}
+
 a {
     color: #CC9933;
     text-decoration: none;
+    transition-property: color, text-decoration;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
 p {
@@ -74,6 +87,14 @@ li {
     border-radius: 15px;
 }
 
+button:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #A47312;
+    border-color: #A47312;
+    transform: scale(1.1);
+}
+
 button {
     color: #CC9933;
     background-color: #FFFFFF;
@@ -81,6 +102,9 @@ button {
     padding-left: 20px;
     padding-bottom: 13px;
     padding-right: 20px;
+    transition-property: border-color, background-color, color, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
 body {
@@ -106,15 +130,27 @@ body {
     align-items: center;
 }
 
+.logo:focus {
+    outline: 1px solid #CC9933;
+}
+
 .header-number {
+    margin-left: 40px;
     font-family: 'Muller-medium', sans-serif;
     color: #666666;
     font-size: 20px;
-    padding-left: 34px;
+}
+
+.header-profile:hover path {
+    fill: #A47312;
 }
 
 .header-profile {
     margin-left: auto;
+}
+
+.header-profile path {
+    transition: fill .3s ease;
 }
 
 .header-text {
@@ -140,6 +176,10 @@ body {
 
 .header-li-link {
     color: #666666;
+}
+
+.header-li-link:hover {
+    cursor: pointer;
 }
 
 .header-svg {
@@ -308,12 +348,15 @@ body {
     margin-top: 7px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .advantage-list-item {
     padding: 42px 42px 41px 45px;
     margin-top: 23px;
+}
+
+.advantage-list-item:not(:nth-child(4n+4)) {
+    margin-right: 22px;
 }
 
 .advantage-list-item {
@@ -384,6 +427,7 @@ body {
 }
 
 .placement-list-item-all {
+    position: relative;
     padding: 373px 55px 27px 54px;
 }
 
@@ -395,6 +439,16 @@ body {
     font-size: 20px;
     line-height: 40px;
 
+}
+
+.placement-list-item-all-description::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .placement-list-item-all-description-icon {
@@ -462,7 +516,20 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #000000;
+    position: relative;
+    display: inline-block;
+    border: none;
+    width: 100%;
 }
+
+.tour-description-item-description-select {
+    position: relative;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-image: url(../img/Rectangle2.svg);
+    background-position: right 5px;
+}
+
 
 .tour-description-item-description-date {
     width: 100%;
@@ -614,6 +681,23 @@ body {
 .footer-ul-icon {
     margin-left: auto;
     margin-top: 6px;
+}
+
+.footer-ul-icon-social:hover {
+    cursor: pointer;
+}
+
+.footer-ul-icon-social:hover path {
+    cursor: pointer;
+    fill: #A47312;
+}
+
+.footer-ul-icon-social {
+    color: #999999;
+}
+
+.footer-ul-icon-social path {
+    transition: fill .3s ease;
 }
 
 .footer-ul-icon-social:not(:first-child) {
